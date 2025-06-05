@@ -38,7 +38,7 @@ This creates an optimized production build in the `dist/` directory.
 
 ### Static Hosting Options
 
-#### 1. Vercel (Recommended)
+#### 1. Vercel (Recommnded)
 ```bash
 # Install Vercel CLI
 npm i -g vercel
