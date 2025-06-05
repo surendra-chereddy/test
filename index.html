@@ -1,60 +1,27 @@
-<!-- HTML for static distribution bundle build -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Swagger UI</title>
-    <link rel="stylesheet" type="text/css" href="dist/swagger-ui.css" >
-    <link rel="icon" type="image/png" href="dist/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="dist/favicon-16x16.png" sizes="16x16" />
-    <style>
-      html
-      {
-        box-sizing: border-box;
-        overflow: -moz-scrollbars-vertical;
-        overflow-y: scroll;
-      }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HauteAi - AI-Powered Fashion Search</title>
+    <meta name="description" content="Find fashion items instantly with AI-powered visual search. Upload photos and discover similar clothing and accessories." />
+    <meta name="author" content="HauteAi" />
 
-      *,
-      *:before,
-      *:after
-      {
-        box-sizing: inherit;
-      }
+    <meta property="og:title" content="HauteAi - AI-Powered Fashion Search" />
+    <meta property="og:description" content="Find fashion items instantly with AI-powered visual search. Upload photos and discover similar clothing and accessories." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-      body
-      {
-        margin:0;
-        background: #fafafa;
-      }
-    </style>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@hauteai" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
   </head>
 
   <body>
-    <div id="swagger-ui"></div>
-
-    <script src="dist/swagger-ui-bundle.js"> </script>
-    <script src="dist/swagger-ui-standalone-preset.js"> </script>
-    <script>
-    window.onload = function() {
-      // Begin Swagger UI call region
-      const ui = SwaggerUIBundle({
-        url: "swagger.yaml",
-        dom_id: '#swagger-ui',
-        deepLinking: true,
-        presets: [
-          SwaggerUIBundle.presets.apis,
-          SwaggerUIStandalonePreset
-        ],
-        plugins: [
-          SwaggerUIBundle.plugins.DownloadUrl
-        ],
-        layout: "StandaloneLayout"
-      })
-      // End Swagger UI call region
-
-      window.ui = ui
-    }
-  </script>
+    <div id="root"></div>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
